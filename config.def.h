@@ -76,7 +76,7 @@ static const char *nextsong[] = { "playerctl", "next", NULL};
 static const char *prevsong[] = { "playerctl", "previous", NULL};
 static const char *playpause[] = { "playerctl", "playpause", NULL};
 
-static const char *roficmd[]  = { "/home/alvaro/.config/rofi/bin/launcher", NULL };
+static const char *roficmd[]  = { "rofi", "-show", "drun", "-modi", "run,drun,ssh", "-scroll-method", "0", "-drun-match-fields", "all", "no-drun-show-actions", "-terminal", "st", "-theme", "/home/alvaro/.config/rofi/config/launcher.rasi", NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *powermenu[]  = { "/home/alvaro/.config/rofi/bin/powermenu", NULL };
 static const char *filemanager[] = { "st", "-e", "spf", NULL};
@@ -99,9 +99,9 @@ static const Key keys[] = {
   {0,                             XF86XK_MonBrightnessDown, spawn,           {.v = brightdown}},
 
 
-	{ MODKEY,                       XK_space,                 spawn,          {.v = SHCMD(roficmd) } },
+	{ MODKEY,                       XK_space,                 spawn,          {.v = roficmd } },
 	{ MODKEY,                       XK_Return,                spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_p,                     spawn,          {.v = SHCMD(powermenu) } },
+	{ MODKEY,                       XK_p,                     spawn,          {.v = powermenu } },
 	{ MODKEY,                       XK_r,                     spawn,          {.v = filemanager } },
 	{ MODKEY,                       XK_z,                     spawn,          {.v = pdfreader } },
 	{ MODKEY,                       XK_f,                     spawn,          {.v = webbrowser } },
