@@ -76,9 +76,9 @@ static const char *nextsong[] = { "playerctl", "next", NULL};
 static const char *prevsong[] = { "playerctl", "previous", NULL};
 static const char *playpause[] = { "playerctl", "playpause", NULL};
 
-static const char *roficmd[]  = { "~/.config/rofi/bin/launcher", NULL };
+static const char *roficmd[]  = { "/home/alvaro/.config/rofi/bin/launcher", NULL };
 static const char *termcmd[]  = { "st", NULL };
-static const char *powermenu[]  = { "~/.config/rofi/bin/powermenu", NULL };
+static const char *powermenu[]  = { "/home/alvaro/.config/rofi/bin/powermenu", NULL };
 static const char *filemanager[] = { "st", "-e", "spf", NULL};
 static const char *pdfreader[] = { "zathura", NULL};
 static const char *webbrowser[] = { "firefox", NULL};
