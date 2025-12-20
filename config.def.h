@@ -99,9 +99,9 @@ static const Key keys[] = {
   {0,                             XF86XK_MonBrightnessDown, spawn,           {.v = brightdown}},
 
 
-	{ MODKEY,                       XK_space,                 spawn,          {.v = roficmd } },
+	{ MODKEY,                       XK_space,                 spawn,          {.v = SHCMD(roficmd) } },
 	{ MODKEY,                       XK_Return,                spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_p,                     spawn,          {.v = powermenu } },
+	{ MODKEY,                       XK_p,                     spawn,          {.v = SHCMD(powermenu) } },
 	{ MODKEY,                       XK_r,                     spawn,          {.v = filemanager } },
 	{ MODKEY,                       XK_z,                     spawn,          {.v = pdfreader } },
 	{ MODKEY,                       XK_f,                     spawn,          {.v = webbrowser } },
