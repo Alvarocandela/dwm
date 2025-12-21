@@ -66,10 +66,10 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *upvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL};
-static const char *downvol[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL};
-static const char *mutevol[] = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL};
-static const char *mutemic[] = { "pactl", "set-source-volume", "0", "toggle", NULL};
+static const char *upvol[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "+5%", NULL};
+static const char *downvol[] = { "wpctl", "set-volume", "@DEFAULT_AUDIO_SINK@", "-5%", NULL};
+static const char *mutevol[] = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SINK@", "toggle", NULL};
+static const char *mutemic[] = { "wpctl", "set-mute", "@DEFAULT_AUDIO_SOURCE@", "toggle", NULL};
 static const char *brightup[] = { "brightnessctl", "set", "5%+", NULL};
 static const char *brightdown[] = { "brightnessctl", "set", "5%-", NULL};
 static const char *nextsong[] = { "playerctl", "next", NULL};
