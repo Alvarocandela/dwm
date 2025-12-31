@@ -74,7 +74,7 @@ static const char *brightup[] = { "brightnessctl", "set", "5%+", NULL};
 static const char *brightdown[] = { "brightnessctl", "set", "5%-", NULL};
 static const char *nextsong[] = { "playerctl", "next", NULL};
 static const char *prevsong[] = { "playerctl", "previous", NULL};
-static const char *playpause[] = { "playerctl", "playpause", NULL};
+static const char *playpause[] = { "playerctl", "play-pause", NULL};
 
 static const char *roficmd[]  = { "rofi", "-show", "drun", "-modi", "run,drun,ssh", "-scroll-method", "0", "-drun-match-fields", "all", "no-drun-show-actions", "-terminal", "st", "-theme", "/home/alvaro/.config/rofi/config/launcher.rasi", NULL };
 static const char *termcmd[]  = { "st", NULL };
